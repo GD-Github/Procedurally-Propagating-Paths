@@ -24,7 +24,7 @@ namespace PPP
                 List<Vector3> initialDirections = Geometry_Utility.GeneratePerpendicularDirections(hitNormal, Vector3.forward, _numberOfPaths, _divergence, _angleRange);
                 _pathManager = new(hitPoint, hitNormal, hitTransform, initialDirections, preferedStepDistance, preferedStepDistance, _iterationAngleDivergence, _layerMask);
                 DefineGizmoColors();
-                InstantiateObjectsAndSelfDestroy();
+                InstantiateObjects();
             }
         }
     }
